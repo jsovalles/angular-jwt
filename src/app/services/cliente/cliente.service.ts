@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 //import {clientesJson} from './clientes.json';
-import { Cliente } from './cliente';
+import { Cliente } from '../../common/cliente';
 import { Observable, of, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, catchError } from 'rxjs/operators';
