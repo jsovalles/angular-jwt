@@ -1,32 +1,55 @@
-label {
-display: block;
-margin-top: 10px;
-}
-
-.card-container.card {
-max-width: 400px !important;
-padding: 40px 40px;
-}
-
-.card {
-background-color: #f7f7f7;
-padding: 20px 25px 30px;
-margin: 0 auto 25px;
-margin-top: 50px;
--moz-border-radius: 2px;
--webkit-border-radius: 2px;
-border-radius: 2px;
--moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
--webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.profile-img-card {
-width: 96px;
-height: 96px;
-margin: 0 auto 10px;
-display: block;
--moz-border-radius: 50%;
--webkit-border-radius: 50%;
-border-radius: 50%;
-}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .box h1{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  .box button[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: grey;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box button[type = "submit"]:hover{
+    background: #2ecc71;
+    color: white;
+  }
